@@ -1,0 +1,3 @@
+{
+  "startCommand": "DATABASE_HOST=pg.neon.tech npm run dev"
+}
