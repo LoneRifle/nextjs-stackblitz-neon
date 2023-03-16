@@ -10,7 +10,10 @@ import config from "../config";
 const sequelize = new Sequelize({
   host: config.DATABASE_HOST,
   database: config.DATABASE_NAME,
-  dialect: "mysql",
+  dialect: "postgres",
+  dialectOptions: {
+    ssl: process.env.NODE_ENV === 'production' || config.DATABASE_HOST === 'pg.neon.tech',
+  },
   username: config.DATABASE_USER,
   password: config.DATABASE_PASSWORD,
 });
