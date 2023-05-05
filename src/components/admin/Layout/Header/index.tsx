@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "Next/image";
+import Image from "next/image";
 import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
 
 import PowerIcon from "./images/PowerIcon";
